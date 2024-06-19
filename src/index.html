@@ -2,23 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Homework 3</title>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="./main.js"></script>
+    <div class="cat-selector">
+      <select name="breed-select" id="breed-select" class="breed-select"></select>
+    </div>
+    <div class="loader hidden"></div>
+    <div class="cat-info hidden">
+      <div class="cat-info-image-container">
+        <img class="cat-info-image" src="" alt="cat" />
+      </div>
+      <div class="cat-info-text">
+        <h1 class="cat-info-title"></h1>
+        <p class="cat-info-description"></p>
+        <p class="cat-info-temperament"></p>
+      </div>
+    </div>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
